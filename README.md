@@ -1,5 +1,14 @@
 # zillow-webpack
 
+I have crafted an [amatuer Typscript version](https://github.com/cantux/site/tree/master/public) similar to this one before.
+
+## How to run
+
+See {package.json}.scripts
+
+## Developer Notes
+
+
 ## Challange
 
 Create a new, empty project and write a webpack configuration that fulfills the following requirements:
