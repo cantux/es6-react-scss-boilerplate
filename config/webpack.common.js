@@ -37,15 +37,6 @@ module.exports = function (options) {
           test: /\.json$/,
           use: 'json-loader'
         },
-        /*
-        * to string and css loader support for *.css files
-        * Returns file content as string
-        *
-        */
-        {
-          test: /\.css$/,
-          use: ['to-string-loader', 'css-loader']
-        },
         /* File loader for supporting images, for example, in CSS files.
          */
         {
@@ -63,6 +54,13 @@ module.exports = function (options) {
               }
             }
           ]
+        },
+        /**
+         * Sass loader
+         */
+        {
+          test: /\.scss$/,
+          use: ['style-loader', 'css-loader', 'sass-loader']
         },
       ]
     },
