@@ -52,6 +52,18 @@ module.exports = function (options) {
           test: /\.(jpeg|jpg|png|gif)$/,
           use: 'file-loader'
         },
+        /* File loader for supporting images, for example, in CSS files. */
+        {
+          test: /\.svg$/,
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 512
+              }
+            }
+          ]
+        },
       ]
     },
 
